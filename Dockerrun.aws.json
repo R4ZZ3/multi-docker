@@ -5,23 +5,20 @@
             "name": "client",
             "image": "rasmust92/multi-client",
             "hostname": "client",
-            "essential": false,
-            "memory": 128
+            "essential": false
         },
         {
             "name": "server",
             "image": "rasmust92/multi-server",
             "hostname": "api",
-            "essential": false,
-            "memory": 128
+            "essential": false
         }
         ,
         {
             "name": "worker",
             "image": "rasmust92/multi-worker",
             "hostname": "worker",
-            "essential": false,
-            "memory": 128
+            "essential": false
         }
         ,
         {
@@ -35,8 +32,7 @@
                     "containerPort": 80
                 }
             ],
-            "links": ["client", "server"],
-            "memory": 128
+            "links": ["client", "server"]
         }
     ]
 
